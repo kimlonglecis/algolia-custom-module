@@ -1,0 +1,21 @@
+/* Define your custom CSS here */
+#algolia-searchbox label{
+	display: none;
+}
+
+
+.ais-body {
+	text-align: left;
+} 
+
+.ais-body.ais-hierarchical-menu--body {
+    text-align: left;
+}
+
+.ais-body.ais-refinement-list--body {
+    text-align: left;
+}
+
+.ais-refinement-list--item {
+    padding: 5px 0px;
+}
