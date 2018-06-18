@@ -1,21 +1,13 @@
 <?xml version="1.0"?>
 <layout>
 
-	<default>
-		<reference name="head">
-			<action method="addJs">
-				<script>company/module.js</script>
-			</action>
-		</reference>
-	</default>
+	
 
 	<algolia_search_handle>
 		<reference name="head">
 			<!-- Uncomment the following action to include files with front-end hook methods -->
 			
-			<action method="addJs">
-				<script>customalgolia/555.js</script>
-			</action>
+			
 			
 
 			<!-- Uncomment the following action to remove the main algolia CSS file -->
@@ -27,11 +19,11 @@
         -->
 
         <!-- Uncomment the following action to load your custom CSS file -->
-            <!--
+            
             <action method="addCss">
                 <stylesheet>customalgolia/customalgolia.css</stylesheet>
             </action>
-        -->
+        
 
         <!-- Uncomment the following action to remove the main algolia autocomplete.js file -->
             <!--
@@ -76,11 +68,10 @@
 			<template>customalgolia/instantsearch/wrapper.phtml</template>
 		</action>
 	</reference>
-    <reference name="algolia-instantsearch-current-refinments">
-        <action method="setTemplate">
-            <template>customalgolia/instantsearch/currentRefinements.phtml</template>
-        </action>
-    </reference>
+    <reference name="top.search">
+            <action method="setTemplate"><template>customalgolia/internals/autocomplete.phtml</template></action>
+        </reference>
+    
 	
 </algolia_search_handle_instantsearch>
 </layout>
